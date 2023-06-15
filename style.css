@@ -1,0 +1,814 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    /* border: 2px solid white; */
+}
+
+nav .logo{
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    padding-left: 40px;
+}
+
+nav .ulbar{
+    float: right;
+    margin-right: 20px;
+}
+
+nav .ulbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav .ulbar li a{
+    text-decoration: none;
+    /* color: #b53c4a; */
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 13px;
+    text-transform: uppercase;
+    /* background-color: green; */
+}
+
+nav .ulbar li a:hover{
+    border-radius: 6px;
+    color: #fff;
+    background-color: #9b091a;
+}
+
+nav #check{
+    display: none;
+}
+
+nav .checkbtn .fa-bars{
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    line-height: 70px;
+    display: none;
+}
+
+ #home-tag {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    margin-top: 50px;
+    display: flex;
+}
+
+#home-tag .home-tex-1{
+    width: 50%;
+    height: 400px;
+    /* background-color: red; */
+}
+
+#home-tag .home-tex-1 .home-fir{
+    width: 300px;
+    height: 120px;
+    /* background-color: green; */
+    margin-left: 50px;
+    color: red;
+}
+
+#home-tag .home-tex-1 .home-fir h4{
+    font-size: 30px;
+    /* color: greenyellow; */
+}
+
+#home-tag .home-tex-1 .home-sec{
+    width: 500px;
+    height: 250px;
+    /* background-color: yellow; */
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+#home-tag .home-img-1{
+    width: 40%;
+    height: 400px;
+    /* background-color: yellow; */
+}
+
+#home-tag .home-img-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+#about-tag {
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+
+    display: flex;
+    /* background-color: pink; */
+
+
+}
+
+#about-tag .about-img{
+    width: 38%;
+    height: 100%;
+    /* background-color: red; */
+
+}
+
+#about-tag .about-img img{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+#about-tag .about-text{
+    width: 60%;
+    height: 100%;
+    /* background-color: gold; */
+
+}
+
+#about-tag .about-text .about-tag-text2{
+    width: 60%;
+    height: 80px;
+    margin-left: 200px;
+    /* background-color: blue; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+#about-tag .about-text .about-tag-text2 p{
+    font-size: 25px;
+    color: #fff;
+}
+
+#about-tag .about-text .about-tag-text2 .about-color-text{
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+#about-tag .about-text .about-tag-text3{
+    width: 550px;
+    height: 350px;
+    /* background-color: chocolate; */
+
+    /* text-align: center; */
+    margin: 10px 170px;
+}
+
+#about-tag .about-text .about-tag-text3 p{
+    font-size: 18px;
+    color: red;
+}
+
+#about-tag .about-text .about-tag-text3 .about-tag-cv{
+    font-size: 16px;
+    color: red;
+}
+
+#services-tag{
+    width: 100%;
+    height: 380px;
+    margin-top: 25px;
+    /* background-color: paleturquoise; */
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#services-tag .ser-tex1{
+    width: 500px;
+    height: 80px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 400px;
+    /* background-color: burlywood; */
+}
+
+#services-tag .ser-tex1 h3{
+    font-size: 30px;
+    color: red;
+}
+
+#services-tag .ser-card{
+    width: 90%;
+    height: 300px;
+    margin: 0 65px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: green; */
+}
+
+#services-tag .ser-card .ser-card1{
+    width: 320px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#services-tag .ser-card .ser-card1:hover{
+    transform: translateY(-10px);
+}
+
+#services-tag .ser-card .ser-card1 img{
+    width: 100px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+#services-tag .ser-card .ser-card1 h4{
+    color: red;
+    font-size: 18px;
+}
+
+#services-tag .ser-card .ser-card1 p{
+    font-size: 15px;
+}
+
+#services-tag .ser-card2{
+    width: 320px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+#services-tag .ser-card .ser-card2:hover{
+    transform: translateY(-10px);
+}
+
+#services-tag .ser-card .ser-card2 img{
+    width: 200px;
+    height: 80px;
+    margin: 10px 60px;
+    margin-top: 20px;
+}
+
+#services-tag .ser-card .ser-card2 h4{
+    color: red;
+    font-size: 18px;
+}
+
+
+
+#services-tag  .ser-card .ser-card3{
+    width: 320px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+#services-tag .ser-card .ser-card3:hover{
+    transform: translateY(-10px);
+}
+
+#services-tag .ser-card .ser-card3 img{
+    width: 150px;
+    height: 80px;
+    margin: 10px 60px;
+    margin-top: 20px;
+}
+
+#services-tag .ser-card .ser-card3 h4{
+    color: red;
+    font-size: 18px;
+}
+
+
+#icon-tag{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+#icon-tag .icon-tag-tex{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+#icon-tag .icon-tag-tex h2{
+    font-size: 20px;
+    color: red;
+    text-transform: uppercase;
+}
+
+#icon-tag .icon-container{
+    width: 100%;
+    height: 70%;
+
+    /* margin: 0 50px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+
+
+#icon-tag .icon-container .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+#icon-tag .icon-container .ic1 i{
+    font-size: 30px;
+}
+#icon-tag .icon-container .ic1:hover{
+    background-color: #3B5998;
+}
+
+#icon-tag .icon-container .ic1 i:hover{
+    color: #fff;
+
+}
+
+#icon-tag .icon-container .ic2 i{
+    font-size: 30px;
+}
+#icon-tag .icon-container .ic2:hover{
+    background: linear-gradient(#833AB4 , #C13584 , #E1306C , #FD1D1D);
+}
+
+#icon-tag .icon-container .ic2 i:hover{
+    color: #fff;
+
+}
+
+#icon-tag .icon-container .ic3 i{
+    font-size: 30px;
+}
+#icon-tag .icon-container .ic3:hover{
+    background-color: steelblue;
+}
+
+#icon-tag .icon-container .ic3 i:hover{
+    color: #fff;
+
+}
+
+#icon-tag .icon-container .ic4 i{
+    font-size: 30px;
+}
+#icon-tag .icon-container .ic4:hover{
+    background-color: slategrey;
+}
+
+#icon-tag .icon-container .ic4 i:hover{
+    color: #000;
+
+}
+
+#icon-tag .icon-container .ic5 i{
+    font-size: 30px;
+}
+#icon-tag .icon-container .ic5:hover{
+    background-color:  #7289DA;
+}
+
+#icon-tag .icon-container .ic5 i:hover{
+    color: black;
+
+}
+
+
+@media (max-width: 1390px) {
+
+    #about-tag .about-text .about-tag-text2{
+        /* background-color: #fff; */
+        width: 100%;
+        margin: 0;
+    }
+
+    #about-tag .about-text .about-tag-text2 p{
+        font-size: 18px;
+
+    }
+
+    #about-tag .about-text .about-tag-text2 .about-color-text{
+        font-size: 25px;
+    }
+
+    #about-tag .about-img img{
+        margin-left: 15px;
+    }
+
+    #services-tag .ser-card{
+        margin: 0;
+        width: 100%;
+    }
+
+    #icon-tag .icon-container .icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    #icon-tag .icon-container .icon i{
+        font-size: 25px;
+    }
+
+    #icon-tag .icon-tag-tex h2{
+        font-size: 18px;
+}
+}
+
+@media (max-width: 952px) {
+    nav .logo{
+        color: red;
+        font-size: 28px;
+        padding-left: 30px;
+    }
+
+    nav .ulbar li a{
+        font-size: 16px;
+    }
+
+    #home-tag .home-tex-1 .home-fir h4{
+        font-size: 25px;
+    }
+
+    #home-tag .home-tex-1 .home-sec{
+    width: 400px;
+    height: 200px;
+    }
+
+    #icon-tag .icon-container .icon{
+    width: 40px;
+    height: 40px;
+    }
+
+    #icon-tag .icon-container .icon i{
+    font-size: 20px;
+    }
+
+    #about-tag .about-text .about-tag-text2{
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    }
+
+    #about-tag .about-text .about-tag-text2 p{
+    font-size: 13px;
+    color: #fff;
+    }
+
+    #about-tag .about-text .about-tag-text2 .about-color-text{
+    font-size: 15px;
+    color: red;
+
+    }
+
+    #about-tag .about-text .about-tag-text3{
+    margin: 0;
+    }
+
+    #about-tag .about-img img{
+        margin-left: 10px;
+    }
+
+
+    #services-tag .ser-tex1{
+
+        margin: 0 230px;
+    }
+
+    #services-tag .ser-tex1 h3{
+        font-size: 23px;
+        color: red;
+    }
+
+    #services-tag .ser-card .ser-card1{
+        width: 280px;
+        height: 180px;
+    }
+
+    #services-tag .ser-card .ser-card1 img{
+        width: 80px;
+        height: 50px;
+    }
+
+    #services-tag .ser-card .ser-card1 h4{
+        font-size: 11px;
+    }
+
+    #services-tag .ser-card .ser-card1 p{
+        font-size: 11px;
+    }
+
+    #services-tag .ser-card .ser-card2{
+        width: 280px;
+        height: 180px;
+    }
+
+    #services-tag .ser-card .ser-card2 img{
+        width: 150px;
+        height: 50px;
+    }
+
+    #services-tag .ser-card .ser-card2 h4{
+        font-size: 11px;
+    }
+
+    #services-tag .ser-card .ser-card2 p{
+        font-size: 11px;
+    }
+
+
+    #services-tag .ser-card .ser-card3{
+        width: 280px;
+        height: 180px;
+    }
+
+    #services-tag .ser-card .ser-card3 img{
+        width: 100px;
+        height: 50px;
+    }
+
+    #services-tag .ser-card .ser-card3 h4{
+        font-size: 11px;
+    }
+
+    #services-tag .ser-card .ser-card3 p{
+        font-size: 11px;
+    }
+
+    #icon-tag .icon-tag-tex h2{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 858px) {
+    nav .checkbtn .fa-bars{
+        display: block;
+        margin-right:10px;
+    }
+
+    nav .ulbar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background-color: green; */
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+        background-color: #000;
+        border: 5px inset red;
+    }
+
+    nav .ulbar li{
+        display: block;
+        margin: 50px 0;
+        line-height: 40px;
+    }
+
+    nav .ulbar li a{
+        font-size: 20px;
+    }
+
+    nav #check:checked ~ ul{
+        left: 0;
+      }
+
+    #home-tag .home-tex-1{
+        width: 48%;
+        /* background-color: #fff; */
+    }
+    #home-tag .home-tex-1 .home-fir{
+        width: 200px;
+        margin-left: 20px;
+
+        /* background-color: aqua; */
+    }
+
+    #home-tag .home-tex-1 .home-fir h4{
+        font-size: 25px;
+    }
+
+    #home-tag .home-tex-1 .home-sec{
+        width: 200px;
+        height: 250px;
+        margin-left: 0;
+        /* background-color: red; */
+        
+    }
+
+    #home-tag .home-tex-1 .home-sec h3{
+        font-size: 16px;
+        /* color: #fff; */
+    }
+
+    #home-tag .home-img-1{
+        width: 100%;
+        height: 280px;
+        margin: 50px 10px;
+        background-color: #fff;
+    }
+
+    #home-tag .home-img-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    #about-tag{
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    #about-tag .about-img {
+        width: 40%;
+        height: 200px;
+
+        margin-top: 0px;
+    }
+
+    #about-tag .about-text{
+        width: 50%;
+
+
+    }
+
+    #about-tag .about-text .about-tag-text2{
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    #about-tag .about-text .about-tag-text2 p{
+        font-size: 9px;
+        color: #fff;
+    }
+    
+    #about-tag .about-text .about-tag-text2 .about-color-text{
+        font-size: 13px;
+        color: red;
+    }
+
+    #about-tag .about-text .about-tag-text3{
+        width: 100%;
+        margin: 0;
+    }
+
+    #about-tag .about-text .about-tag-text3 p{
+        font-size: 13px;
+        
+    }
+    
+    #about-tag .about-text .about-tag-text3 .about-tag-cv{
+        font-size: 11px;
+        
+    }
+
+    #about-tag .about-img img{
+        margin: 0;
+    }
+    
+    #services-tag{
+        width: 100%;
+        height: 480px;
+    }
+    #services-tag .ser-tex1{
+        margin: 0 100px;
+        width: 200px;
+        /* background-color: #fff; */
+    }
+
+    #services-tag .ser-tex1 h3{
+        font-size: 15px;
+    }
+
+    #services-tag .ser-card{
+        width: 100%;
+        height: 380px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #services-tag .ser-card .ser-card1{
+        width: 180px;
+        height: 150px;
+
+        align-items: center;
+    }
+
+    #services-tag .ser-card .ser-card1 img{
+        width: 50px;
+        height: 30px;
+    }
+
+    #services-tag .ser-card .ser-card1 h4{
+        font-size: 8px;
+    }
+
+    #services-tag .ser-card .ser-card1 p{
+        font-size: 8px;
+    }
+
+    #services-tag .ser-card .ser-card2{
+        width: 180px;
+        height: 150px;
+    }
+
+    #services-tag .ser-card .ser-card2 img{
+        width: 50px;
+        height: 30px;
+        
+
+    }
+
+    #services-tag .ser-card .ser-card2 h4{
+        font-size: 8px;
+    }
+
+    #services-tag .ser-card .ser-card2 p{
+        font-size: 8px;
+    }
+
+    #services-tag .ser-card .ser-card3{
+        width: 180px;
+        height: 150px;
+    }
+
+    #services-tag .ser-card .ser-card3 img{
+        width: 50px;
+        height: 30px;
+    }
+
+    #services-tag .ser-card .ser-card3 h4{
+        font-size: 8px;
+    }
+
+    #services-tag .ser-card .ser-card3 p{
+        font-size: 8px;
+    }
+
+
+    #icon-tag .icon-container .icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    #icon-tag .icon-container .icon i{
+        font-size: 15px;
+    }
+
+    #icon-tag .icon-tag-tex h2{
+        font-size: 10px;
+
+    }
+
+}
